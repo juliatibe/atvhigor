@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function bhaskara1(a, b, c) {
+           let calculo = ((b ** 2) - (4 * a * c))// variável para calcular
+           if (calculo < 0) {
+             return "Valores inválidos"
+           }
+
+           calculo = calculo ** 0.5
+           let resultado1 = ((-b) + calculo) / (2 * a)
+           return resultado1
+
+        }
+
+        function bhaskara2(a, b, c) {
+           let calculo = ((b ** 2) - (4 * a * c)) // variável para calcular
+           
+           if (calculo < 0) {
+             return "Valores inválidos"
+           }
+
+           calculo = calculo ** 0.5
+           let resultado2 = ((-b) - calculo) / (2 * a)
+           return resultado2
+
+        }
+         
+        var a = parseFloat(prompt("Insira o coeficiente a "))
+        var b = parseFloat(prompt("Insira o coeficiente b "))
+        var c = parseFloat(prompt("Insira o coeficiente c "))
+        var resultado3 = bhaskara1(a, b, c) //invocar a função
+        var resultado4 = bhaskara2(a, b, c) //invocar a função
+        alert(resultado3 + " e " + resultado4) //exibir o parâmetro/bloco de código
+
+
+    </script>
+
+
+
+</body>
+</html>

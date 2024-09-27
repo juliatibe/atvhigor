@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let num1 = parseFloat(prompt("Digite a primeira nota: "));
+        let num2 = parseFloat(prompt("Digite a segunda nota: "));
+        let simbolo = prompt("Digite um símbolo: ");
+
+        function operacaoNumero(n1, n2, op){
+            let resultado
+            if (op == '+'){
+                resultado = num1 + num2
+            }
+
+            else if(op == '-'){
+                resultado = num1 - num2
+            }
+
+            else if(op == '/'){
+                resultado = num1 / num2
+            }
+
+            else if(op == '*'){
+                resultado = num1 * num2
+            }
+
+            else{
+                resultado = "Operação inválida"
+            }
+            return resultado 
+        }
+
+        alert(operacaoNumero(num1, num2, simbolo));
+    </script>
+</body>
+</html>

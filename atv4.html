@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let nota1 = parseFloat(prompt("Digite a primeira nota: "))
+        let nota2 = parseFloat(prompt("Digite a segunda nota: "))
+        let nota3 = parseFloat(prompt("Digite a terceira nota: "))
+        let aoup = prompt("A ou P? ")
+
+        function numeros(nota1, nota2, nota3){
+            var mediaaritmetica = (nota1 + nota2 + nota3) / 3;
+            return mediaaritmetica;
+
+        }
+
+        function numeros2(nota1, nota2, nota3){
+            var mediaponderada = (nota1*5 + nota2*3 + nota3*2) / 10;
+            return mediaponderada;
+        }
+
+        if(aoup === "A"){
+            alert(numeros (nota1, nota2, nota3));
+        }
+
+        else if( aoup === "P"){
+            alert(numeros2 (nota1, nota2, nota3));
+        }
+
+        else{
+            alert("Insira um valor: ");
+        }
+
+
+
+
+
+    </script>
+
+</body>
+</html>
